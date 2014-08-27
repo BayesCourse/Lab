@@ -1,9 +1,3 @@
----
-output:
-  html_document:
-    keep_md: true
----
-
 
 Lab 1 - Ben Weinstein
 ========================================================
