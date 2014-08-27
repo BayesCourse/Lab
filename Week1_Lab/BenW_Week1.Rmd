@@ -40,7 +40,7 @@ Verbal explanation of question two answer: We want to know the area under the pd
 \[ \int_1^{+\infty} \int_1^y \frac{2}{x^3} \frac{3}{y^4}
 \,dx.\,dy.\] 
 
-after some fancy algebra that it took me far to long to understand (see attached):
+after some fancy algebra that it took me far too long to understand (see attached):
 
 \[ \int_1^{+\infty} \frac{-3*y^-5}{5} +  \int_1^{+\infty} \frac{-3y^-3*}{3}
 \,dx.\,dy.\] 
@@ -51,6 +51,6 @@ remembering that lim of y as approaches Inf = 0 for any negative polynomial, we 
 \[ \frac{-3}{5} + 1 = \frac{2}{5}\]
 
 hurrah!
-
+alot of credit to marisa and elise for sticking it out with me. 
 
 
