@@ -1,8 +1,3 @@
----
-output:
-  html_document:
-    keep_md: true
----
 
 
 Lab 1 - Ben Weinstein
@@ -20,7 +15,8 @@ The equations are independent, so the joint probability is the multiplication of
 Question Two
 --------
 
-```{r,warning=FALSE,message=FALSE}
+
+```r
 require(reshape)
 require(ggplot2)
 #Define Functions
@@ -41,6 +37,8 @@ r<-melt(r,id.var="s")
 
 ggplot(r,aes(x=s,y=value,col=variable)) + geom_point() + geom_line()
 ```
+
+![plot of chunk unnamed-chunk-1](./BenW_Week1_files/figure-html/unnamed-chunk-1.png) 
 
 Verbal explanation of question two answer: We want to know the area under the pdf for x from 1 to y, where y is evaluated from 1 to infinity. This is a double integral in the form of 
 
