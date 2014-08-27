@@ -12,3 +12,5 @@ scatter <- ggplot()+geom_point(aes(rnorm(100), rnorm(100)))
 hist_right <- ggplot()+geom_histogram(aes(rnorm(100)))+coord_flip()
 
 grid.arrange(hist_top, empty, scatter, hist_right, ncol=2, nrow=2, widths=c(4, 1), heights=c(1, 4))
+
+#sdkjfal;kdfj;a
