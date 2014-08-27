@@ -13,4 +13,5 @@ hist_right <- ggplot()+geom_histogram(aes(rnorm(100)))+coord_flip()
 
 grid.arrange(hist_top, empty, scatter, hist_right, ncol=2, nrow=2, widths=c(4, 1), heights=c(1, 4))
 
+#my project
 #sdkjfal;kdfj;aalsdof;askdjf
