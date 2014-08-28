@@ -1,10 +1,16 @@
-# Title
-## Subtitle
-### Sub-sub title
+# Lab 1
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
+### Question 1
 
-When you click the **Knit HTML** button a web page will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+X and Y are **independent** variables with the following probability distributions:   $g(x)=\frac{2}{x^3}$ for 1 < x < infinity and   $h(y)=\frac{3}{y^4}$ for 1 < y < infinity.    
+What is their joint probability?  
+Because the two variables are independent, their joint probability is simply the product of the two individual probabilities. This is shown as $P(X,Y)=\frac{6}{x^3y^4}$  
+
+### Question 2
+
+Show that $P(X<Y)=\frac{2}{5}$:   
+
+
 
 ```{r}
 summary(cars)
