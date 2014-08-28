@@ -1,0 +1,57 @@
+
+Lab 1 - Ben Weinstein
+========================================================
+
+Question 1
+---
+
+The equations are independent, so the joint probability is the multiplication of the individual probabilities.
+
+\[
+\frac{2}{x^3} \frac{3}{y^4}
+\]
+
+Question Two
+--------
+
+```{r,warning=FALSE,message=FALSE}
+require(reshape)
+require(ggplot2)
+#Define Functions
+
+gx<-function(x){
+  2/(x^3)
+}
+
+hy<-function(y){
+  3/y^4
+}
+
+#plot functions
+s<-seq(1,2,0.01)
+
+r<-data.frame(s,g=gx(s),h=hy(s))
+r<-melt(r,id.var="s")
+
+ggplot(r,aes(x=s,y=value,col=variable)) + geom_point() + geom_line()
+```
+
+Verbal explanation of question two answer: We want to know the area under the pdf for x from 1 to y, where y is evaluated from 1 to infinity. This is a double integral in the form of 
+
+\[ \int_1^{+\infty} \int_1^y \frac{2}{x^3} \frac{3}{y^4}
+\,dx.\,dy.\] 
+
+after some fancy algebra that it took me far too long to understand (see attached):
+
+\[ \int_1^{+\infty} \frac{-3*y^-5}{5} +  \int_1^{+\infty} \frac{-3y^-3*}{3}
+\,dx.\,dy.\] 
+
+
+remembering that lim of y as approaches Inf = 0 for any negative polynomial, we can find that we just need to evaluate at 1 for each and add the results, which is: 
+
+\[ \frac{-3}{5} + 1 = \frac{2}{5}\]
+
+hurrah!
+alot of credit to marisa and elise for sticking it out with me. 
+
+
